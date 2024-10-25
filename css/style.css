@@ -1,0 +1,235 @@
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+ }
+ ul,ol {
+    list-style: none;
+ }
+ body {
+    font-family:Poppins, system-ui;
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .img {
+   max-width: 100%;
+   display: block;
+ }
+ .row {
+   display: flex;
+   flex-wrap: nowrap;
+ 
+ }
+.container{
+   max-width: 1240px;
+   margin: auto;
+}
+.btn-primary {
+   background-color: #b88e2f;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 150%;
+   color: #fff;
+   padding: 12px 36px;
+   display: inline-block;
+   text-transform: capitalize;
+}
+nav .row {
+   align-items: center;
+   justify-content: center;
+}
+nav .quickmenu{
+   width: 30%;
+}
+nav .manu{
+   width: 45%;
+  
+}
+nav .logo {
+   width:25%
+}
+nav .menu ul {
+   justify-content: center;
+}
+nav .menu ul li a {
+font-weight: 500;
+font-size: 16px;
+color: #000;
+padding: 38px 37.5px;
+}
+nav .quickmenu ul {
+   justify-content: end;
+}
+nav .quickmenu ul li a {
+   font-size: 25px;
+   color: black;
+   padding: 36px 22.5px;
+}
+#banner {
+    background-image: url(../img/banner.png);
+   
+    height: 716px;
+    background-position: center;
+    background-size:cover;
+    padding-top: 157px;
+}
+.bannercnt {
+    width: 643px;
+    background-color: #FFF3E3;
+    padding: 62px 43px 37px;
+    margin-left: auto;
+    margin-right: 58px;
+    border-radius: 10px;
+}
+.bannercnt h4 {
+   font-weight: 600;
+   font-size: 16px;
+   letter-spacing: 0.19em;
+   color: #333;
+}
+.bannercnt h2 {
+   margin: 4px 0 17px;
+   font-weight: 700;
+   font-size: 53px;
+   line-height: 125%;
+   color: #b88e2f;
+}
+.bannercnt p {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 133%;
+   color: #333;
+   margin-bottom: 46px;
+}
+.bannercnt a {
+   padding: 25px 72px;
+   text-transform: uppercase;
+}
+#caregory {
+   margin: 52px 0 56px;
+   text-align: center;
+   
+}
+#category .heading h2 { 
+   font-weight: 700;
+   font-size: 32px;
+   color: #333;
+   text-align: center;
+}
+#category .heading p {
+   font-weight: 400;
+   font-size: 20px;
+   color: #666;
+   text-align: center;
+ }
+.categorycard {
+   width: 33.33%;
+   margin-top: 62px;
+   font-weight: 600;
+   font-size: 24px;
+   text-align: center;
+ }
+ #products {
+   margin-bottom: 69px;
+ }
+.productcard {
+   width: calc(25%-2rem);
+   margin: 0 1rem;
+   position: relative;
+   overflow: hidden;
+}
+.productcard .productimage {
+   position: relative;
+}
+.productcard .productimage .discount {
+   position: absolute;
+   width: 48px;
+   height: 48px;
+   background-color: #e97171;
+   color: white;
+   text-align: center;
+   line-height: 48px;
+   border-radius: 50%;
+   font-weight: 500px;
+   top: 24px;
+   right: 24px;
+}
+.productcard .productcnt {
+   padding: 16px 20px 30px;
+   background-color: #f4f5f7;
+}
+.productcard .productcnt h3 {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 120%;
+   color: #3a3a3a;
+}
+.productcard .productcnt p {
+   font-weight: 500;
+   margin: 8px 0;
+   font-size: 16px;
+   line-height: 150%;
+   color: #898989;
+}
+.productcard .productcnt h4 { 
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 150%;
+   color: #3a3a3a;
+}
+.productcard .productcnt h4 span {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   text-decoration: line-through;
+   color: #b0b0b0;
+}
+
+.productcard img {
+   max-width: 100%;
+   display:block;
+}
+.productcard .overlay {
+    position: absolute;
+    background-color: rgba(58, 58, 58,0.72);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(100%);
+    transition: 0.5s;
+
+}
+.productcard .overlay .cnt {
+    transform: translateY(60px);
+    transition: 0.35s;
+    opacity: 0;
+    transition-delay: 2s;
+}
+.productcard:hover .overlay ,
+.productcard .overlay .cnt {
+    transform: translateY(0%);
+    opacity: 1;
+}
+.productcard .overlay .btn-primary {
+    background-color: white;
+    color: #b88e2f;
+    transition: 0.3s;
+    margin-bottom: 24px;
+}
+.productcard .overlay .btn-primary:hover {
+    background-color: #b88e2f;
+    color: white;
+}
+.productcard .overlay .row a {
+    margin: 0 10px;
+}
